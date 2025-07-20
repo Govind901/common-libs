@@ -3,6 +3,7 @@ package com.dropx.commons.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,5 +15,5 @@ public class UserProfileDetails {
     private int userId;
     @Column(name = "ADDERS")
     @OneToMany(mappedBy = "userProfile", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<AddressDetails> adders;
+    private List<AddressDetails> adders = new ArrayList<>();
 }
