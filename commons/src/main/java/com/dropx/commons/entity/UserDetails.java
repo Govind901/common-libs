@@ -1,4 +1,4 @@
-package com.dropx.login.entity;
+package com.dropx.commons.entity;
 
 import jakarta.persistence.*;
 import lombok.Builder;
